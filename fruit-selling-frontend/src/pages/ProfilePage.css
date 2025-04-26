@@ -1,0 +1,160 @@
+.profile-page {
+  padding: 2rem 0;
+}
+
+.profile-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .profile-container {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.info-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+}
+
+.info-item {
+  margin-bottom: 1rem;
+}
+
+.info-item:last-child {
+  margin-bottom: 0;
+}
+
+.info-label {
+  display: block;
+  font-weight: 500;
+  color: #6b7280;
+  margin-bottom: 0.25rem;
+  font-size: 0.875rem;
+}
+
+.info-value {
+  font-weight: 600;
+  color: #333;
+}
+
+.order-history {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.order-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.order-id .label,
+.order-date .label {
+  font-weight: 500;
+  color: #6b7280;
+  margin-right: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.order-id .value,
+.order-date .value {
+  font-weight: 600;
+  color: #333;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  background-color: #d1fae5;
+  color: #065f46;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.order-items {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.order-item:last-child {
+  margin-bottom: 0;
+}
+
+.item-name {
+  flex: 1;
+  font-weight: 500;
+  color: #333;
+}
+
+.item-quantity {
+  margin: 0 1rem;
+  color: #6b7280;
+}
+
+.item-price {
+  font-weight: 600;
+  color: #333;
+}
+
+.order-footer {
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.order-total .label {
+  font-weight: 500;
+  color: #6b7280;
+  margin-right: 0.5rem;
+}
+
+.order-total .value {
+  font-weight: 700;
+  color: #333;
+  font-size: 1.125rem;
+}
+
+.no-orders {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  text-align: center;
+  color: #6b7280;
+}
+
